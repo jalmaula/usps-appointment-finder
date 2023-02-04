@@ -53,8 +53,8 @@ async function getLocations(zip) {
         body: JSON.stringify({
             "poScheduleType": "PASSPORT",
             "date": formatDate(new Date()),
-            "numberOfAdults": "1",
-            "numberOfMinors": "0",
+            "numberOfAdults": "0",
+            "numberOfMinors": "1",
             "radius": "20",
             "zip5": zip,
             "city": "",
@@ -71,8 +71,8 @@ async function getAppointments(date, fdbIds) {
         body: JSON.stringify({
             "date": date,
             "productType":"PASSPORT",
-            "numberOfAdults":"1",
-            "numberOfMinors":"0",
+            "numberOfAdults":"0",
+            "numberOfMinors":"1",
             "excludedConfirmationNumber":[""],
             "fdbId": fdbIds,
             "skipEndOfDayRecord":true,
